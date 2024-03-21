@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import NewWorkSessionRow from "@/components/WorkSessionFormRow";
 import WorkSessionRow from "@/components/WorkSessionRow";
 import { db } from "@/modules/db";
@@ -29,6 +30,9 @@ const AccountDetailPage: React.FC<Props> = async ({ params }) => {
   });
 
   return (
+    <>
+  
+    <Navbar/>
     <div className="p-8">
       <h1 className="text-lg font-bold mb-8">{account.name}</h1>
 
@@ -49,6 +53,7 @@ const AccountDetailPage: React.FC<Props> = async ({ params }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

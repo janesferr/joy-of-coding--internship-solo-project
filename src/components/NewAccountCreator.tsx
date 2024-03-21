@@ -13,7 +13,7 @@ const NewAccountCreator: React.FC<Props> = () => {
   if (!editMode)
     return (
       <button className="text-left" onClick={() => setEditMode(true)}>
-        + New Account
+        + New Company Name
       </button>
     );
 
@@ -26,7 +26,7 @@ const NewAccountCreator: React.FC<Props> = () => {
       <Input
         type="text"
         name="name"
-        placeholder="Account Name"
+        placeholder="Company Name"
         className="text-slate-900"
       />
       <Button type="submit">Create</Button>
